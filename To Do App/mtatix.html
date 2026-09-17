@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo App</title>
+    <link rel="stylesheet" href="gee.css">
+</head>
+<body>
+    <div class="contaner">
+        <div class="status-container">
+            <div class="details">
+                <h1>ToDo App</h1>
+                <p>Keep it up!</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="status-numbers">
+                <p id="numbers">2 / 3</p>
+            </div>
+
+            
+        </div>
+        <form id="task-form">
+            <label class="sr-only" for="task-input">New task</label>
+            <input id="task-input" type="text" placeholder="Write your task" autocomplete="off" maxlength="120" required>
+            <button type="submit" aria-label="Add task" title="Add task">+</button>
+        </form>
+    <ul class="task-list"></ul>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
